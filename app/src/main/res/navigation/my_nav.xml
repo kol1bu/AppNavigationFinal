@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/fragmentFirst">
+
+    <fragment
+        android:id="@+id/fragmentFirst"
+        android:name="com.example.appnavigation.FragmentFirst"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentSecond"
+            app:destination="@id/fragmentSecond" />
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentThird"
+            app:destination="@id/fragmentThird" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSecond"
+        android:name="com.example.appnavigation.FragmentSecond"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_fragmentSecond_to_fragmentForth"
+            app:destination="@id/fragmentForth" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThird"
+        android:name="com.example.appnavigation.FragmentThird"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_fragmentThird_to_fragmentFifth"
+            app:destination="@id/fragmentFifth" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentForth"
+        android:name="com.example.appnavigation.FragmentForth"
+        android:label="fragment_forth"
+        tools:layout="@layout/fragment_forth" >
+        <action
+            android:id="@+id/action_fragmentForth_to_fragmentSixth"
+            app:destination="@id/fragmentSixth" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentFifth"
+        android:name="com.example.appnavigation.FragmentFifth"
+        android:label="fragment_fifth"
+        tools:layout="@layout/fragment_fifth" >
+        <action
+            android:id="@+id/action_fragmentFifth_to_fragmentSixth"
+            app:destination="@id/fragmentSixth" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSixth"
+        android:name="com.example.appnavigation.FragmentSixth"
+        android:label="fragment_sixth"
+        tools:layout="@layout/fragment_sixth" >
+        <action
+            android:id="@+id/action_fragmentSixth_to_fragmentFirst"
+            app:destination="@id/fragmentFirst" />
+    </fragment>
+</navigation>
